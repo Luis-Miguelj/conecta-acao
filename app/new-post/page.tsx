@@ -10,7 +10,7 @@ import { projetosSociais } from "@/services/items";
 export default function NewPost() {
   const [imageSelect, setImageSelect] = useState<string>('')
 
-  const images = projetosSociais.map(items => items.imageURL)
+  const images = [... new Set(projetosSociais.map(items => items.imageURL))]
 
 
   return (
