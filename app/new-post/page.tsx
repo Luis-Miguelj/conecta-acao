@@ -29,7 +29,7 @@ export default function NewPost() {
               )
             }
           </div>
-          <div className="flex justify-center items-center gap-2 md:gap-5 flex-wrap w-full h-18 overflow-y-scroll scroll-smooth" id="images">
+          <div className="flex justify-center items-center gap-2 md:gap-5 flex-wrap w-full h-18 overflow-y-scroll scroll-smooth max-xl:h-full" id="images">
             {
               images.map((image, index) => (
                 <button key={index} className="cursor-pointer p-1 md:p-1.5 bg-quaternary rounded-md" onClick={() => {
